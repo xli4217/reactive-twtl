@@ -1,0 +1,7 @@
+digraph "" {
+T0_init;
+accept_all;
+T0_init -> accept_all  [guard="(c)", input="{1}", key=0, label="(c)", weight=0];
+T0_init -> T0_init  [guard="(!(c))", input="{0}", key=0, label="(!(c))", weight=0];
+accept_all -> accept_all  [guard="(1)", input="{0, 1}", key=0, label="(1)", weight=0];
+}
